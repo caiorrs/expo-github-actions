@@ -21,9 +21,10 @@ jobs:
       - name: Setup Expo
         uses: expo/expo-github-action@v6
         with:
-          expo-version: 3.x
-          token: ${{ secrets.EXPO_TOKEN }}
-          expo-cache: true
+          eas-version: latest
+          # token: ${{ secrets.EXPO_TOKEN }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
 
       - name: Install dependencies
         run: rm -rf node_modules && yarn install --frozen-lockfile
