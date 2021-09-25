@@ -22,7 +22,7 @@ jobs:
         uses: expo/expo-github-action@v6
         with:
           eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+          expo-token: ${{ secrets.EXPO_TOKEN }}
           # username: ${{ secrets.USERNAME }}
           # password: ${{ secrets.PASSWORD }}
 
